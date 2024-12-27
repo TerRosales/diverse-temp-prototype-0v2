@@ -1,0 +1,31 @@
+.hero-image {
+  background: url("/licensed-stock-1.jpeg");
+  background-size: cover;
+  background-position: 60% center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 72vh;
+}
+.hero-image-2 {
+  background: url("/licensed-stock-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30vh;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .hero-image {
+    background-position: 60% center; /* Adjust this value as needed */
+    height: 62vh;
+  }
+}
+@media (max-width: 320px) {
+  .hero-image {
+    background-position: 80% center; /* Adjust this value as needed */
+    height: 30vh;
+  }
+}

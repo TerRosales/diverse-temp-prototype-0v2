@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
+import AppWrapper from "@/components/misc/AppWrapper";
 
 export const metadata: Metadata = {
   title: "Diverse Temp Prototype",
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={``}>
+        <AppWrapper>{children}</AppWrapper>
+      </body>
     </html>
   );
 }
